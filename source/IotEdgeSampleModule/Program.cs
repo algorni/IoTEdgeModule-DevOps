@@ -15,7 +15,7 @@ namespace IotEdgeSampleModule
 
     class Program
     {
-        static string localStorageConnectionString = Environment.GetEnvironmentVariable("LOCAL_STORAGE_CONNECTION_STRING");
+        //static string localStorageConnectionString = Environment.GetEnvironmentVariable("LOCAL_STORAGE_CONNECTION_STRING");
 
         static ModuleClient ioTHubModuleClient = null;
 
@@ -101,6 +101,7 @@ namespace IotEdgeSampleModule
             }
         }
 
+        /*
         static void BlobStuff(CancellationToken cancellationToken)
         {
             Console.WriteLine($"Connecting to local Blob Storage: {localStorageConnectionString}");
@@ -145,5 +146,6 @@ namespace IotEdgeSampleModule
             }
           
         }
+        */
     }
 }

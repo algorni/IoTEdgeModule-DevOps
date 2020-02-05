@@ -10,10 +10,10 @@
             "minDockerVersion": "v1.25",
             "loggingOptions": "",
             "registryCredentials": {
-              "ACS4IoT4FTA": {
-                "username": "$CONTAINER_REGISTRY_USERNAME_ACS4IoT4FTA",
-                "password": "$CONTAINER_REGISTRY_PASSWORD_ACS4IoT4FTA",
-                "address": "ACS4IoT4FTA.azurecr.io"
+              "ACR": {
+                "username": "$CONTAINER_REGISTRY_USERNAME",
+                "password": "$CONTAINER_REGISTRY_PASSWORD",
+                "address": "$CONTAINER_REGISTRY_URL"
               }
             }
           }
