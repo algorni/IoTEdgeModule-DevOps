@@ -11,9 +11,9 @@
             "loggingOptions": "",
             "registryCredentials": {
               "ACS4IoT4FTA": {
-                "username": "$CONTAINER_REGISTRY_USERNAME_ACS4IoT4FTA",
-                "password": "$CONTAINER_REGISTRY_PASSWORD_ACS4IoT4FTA",
-                "address": "ACS4IoT4FTA.azurecr.io"
+                "username": "$CONTAINER_REGISTRY_ACS4IoT4FTA_USERNAME",
+                "password": "$CONTAINER_REGISTRY_ACS4IoT4FTA_PASSWORD",
+                "address": "$CONTAINER_REGISTRY_ACS4IoT4FTA_URL"
               }
             }
           }
