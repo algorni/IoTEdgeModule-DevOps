@@ -2,9 +2,9 @@
     "$schema-version": "0.0.1",
     "description": "",
   "image": {
-    "repository": "$CONTAINER_REGISTRY_ACS4IoT4FTA_URL/iotedgesamplemodule",
+    "repository": "${CONTAINER_REGISTRY_ACS4IoT4FTA_URL}/iotedgesamplemodule",
     "tag": {
-      "version": "0.0.$MODULE_IotEdgeSampleModule_Version",
+      "version": "0.0.${MODULE_IotEdgeSampleModule_Version}",
       "platforms": {
         "amd64": "./Dockerfile.amd64",
         "amd64.debug": "./Dockerfile.amd64.debug",
