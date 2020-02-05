@@ -91,7 +91,11 @@
             "restartPolicy": "always",
             "settings": {
               "image": "${MODULEDIR<../IotEdgeSampleModule>}",
-              "createOptions": {}
+              "createOptions": {
+                "Env": [
+                  "LOCAL_STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=http;BlobEndpoint=http://edgeblob:11002/edgestorage;AccountName=edgestorage;AccountKey=DE7gQjAODghwQLNKXgZ9hXkyeKiESB/3nnnEU54qSNjRxQ5T01YQoyqEcPCVV/phZlVciBA7R0BBSrXd/b7nlA==;"
+                ]
+              }
             }
           }
         }
@@ -106,6 +110,11 @@
         "storeAndForwardConfiguration": {
           "timeToLiveSecs": 7200
         }
+      }
+    },
+    "IotEdgeSampleModule": {
+      "properties.desired": {
+        "myTestTwinProp": "from-manifest"
       }
     }
   }
